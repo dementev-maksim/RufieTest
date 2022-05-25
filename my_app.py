@@ -28,6 +28,7 @@ class MainWin(QWidget):
         self.layout.addWidget(self.hello_text)
         self.layout.addWidget(self.instruction)
         self.layout.addWidget(self.btn_next)
+        self.setLayout(self.layout)
 
     def connects(self):
         self.btn_next.clicked.connect(self.next_click)
